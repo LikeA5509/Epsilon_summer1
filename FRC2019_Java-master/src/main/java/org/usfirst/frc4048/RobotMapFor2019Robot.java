@@ -72,52 +72,52 @@ interface RobotMapFor2019Robot {
   
   //CAN ID
   public static final int PDP_CAN_ID = 0;
-  public static final int FRONT_LEFT_DRIVE_MOTOR_ID = 8/*6*/; 
+  public static final int FRONT_LEFT_DRIVE_MOTOR_ID = 1/*6*/; 
   public static final int FRONT_RIGHT_DRIVE_MOTOR_ID = 7/*5*/; 
-  public static final int REAR_LEFT_DRIVE_MOTOR_ID = 5/*7*/;
-  public static final int REAR_RIGHT_DRIVE_MOTOR_ID = 6/*8*/; 
-  public static final int FRONT_LEFT_STEER_MOTOR_ID = 4/*2*/; 
-  public static final int FRONT_RIGHT_STEER_MOTOR_ID = 3/*1*/; 
-  public static final int REAR_LEFT_STEER_MOTOR_ID = 1/*3*/; 
-  public static final int REAR_RIGHT_STEER_MOTOR_ID = 2/*4*/;
+  public static final int REAR_LEFT_DRIVE_MOTOR_ID = 2/*7*/;
+  public static final int REAR_RIGHT_DRIVE_MOTOR_ID = 8/*8*/; 
+  public static final int FRONT_LEFT_STEER_MOTOR_ID = 3/*2*/; 
+  public static final int FRONT_RIGHT_STEER_MOTOR_ID = 6/*1*/; 
+  public static final int REAR_LEFT_STEER_MOTOR_ID = 4/*3*/; 
+  public static final int REAR_RIGHT_STEER_MOTOR_ID = 5/*4*/;
 
-  public static final int DRIVE_PIGEON_ID = 9;
-  public static final int PCM_CAN_ID = 10;  
-  public static final int ELEVATOR_MOTOR_ID = 11;
+  //public static final int DRIVE_PIGEON_ID = 9;
+  //public static final int PCM_CAN_ID = 10;  
+  //public static final int ELEVATOR_MOTOR_ID = 11;
   
 
   //ANALOG INPUTS
-  public static final int SWERVE_DRIVE_ANALOG_INPUT_FRONT_RIGHT_ID = 2/*0*/;
+  public static final int SWERVE_DRIVE_ANALOG_INPUT_FRONT_RIGHT_ID = 6/*0*/;
   public static final int SWERVE_DRIVE_ANALOG_INPUT_FRONT_LEFT_ID = 3/*1*/;
   public static final int SWERVE_DRIVE_ANALOG_INPUT_REAR_RIGHT_ID = 5/*3*/;
-  public static final int SWERVE_DRIVE_ANALOG_INPUT_REAR_LEFT_ID = 1/*2*/;
+  public static final int SWERVE_DRIVE_ANALOG_INPUT_REAR_LEFT_ID = 4/*2*/;
   
-  public static final int CLIMBER_DISTANCE_SENSOR_LEFT_ID = 4;
-  public static final int CLIMBER_DISTANCE_SENSOR_RIGHT_ID = 0;
-  public static final int COMPRESSOR_PRESSURE_SENSOR = 6;
+  //public static final int CLIMBER_DISTANCE_SENSOR_LEFT_ID = 4;
+  //public static final int CLIMBER_DISTANCE_SENSOR_RIGHT_ID = 0;
+  //public static final int COMPRESSOR_PRESSURE_SENSOR = 6;
 
   //DIGITAL INPUTS
-  public static final int CARGO_OPTICAL_SENSOR_ID = 2;
-  public static final int SWERVE_DRIVE_ENCODER_A_ID = 5; 
-  public static final int SWERVE_DRIVE_ENCODER_B_ID = 6;
-  public static final int[] ALIGNMENT_ULTRASONIC_ID = {3,4};
-  public static final int HATCH_DIGITAL_INPUT_ID = 7;
-  public static final int CARGO_DIGITAL_INPUT_ID = 8;
-  public static final int PIVOT_LIMIT_SWITCH_LEFT_ID = 1;
-  public static final int PIVOT_LIMIT_SWITCH_RIGHT_ID = 0;
-  public static final int CLIMBER_POSITION_SENSOR_ID = 12;
+  //public static final int CARGO_OPTICAL_SENSOR_ID = 2;
+  //public static final int SWERVE_DRIVE_ENCODER_A_ID = 5; 
+  //public static final int SWERVE_DRIVE_ENCODER_B_ID = 6;
+  //public static final int[] ALIGNMENT_ULTRASONIC_ID = {3,4};
+  //public static final int HATCH_DIGITAL_INPUT_ID = 7;
+  //public static final int CARGO_DIGITAL_INPUT_ID = 8;
+  //public static final int PIVOT_LIMIT_SWITCH_LEFT_ID = 1;
+  //public static final int PIVOT_LIMIT_SWITCH_RIGHT_ID = 0;
+  //public static final int CLIMBER_POSITION_SENSOR_ID = 12;
   
   //PWM
-  public static final int PIVOT_MOTOR_ID = 1;
-  public static final int CARGO_MOTOR_ID = 0;
-  public static final int WINCH_ID = 2;
+  //public static final int PIVOT_MOTOR_ID = 1;
+  //public static final int CARGO_MOTOR_ID = 0;
+  //public static final int WINCH_ID = 2;
   
   //PCM
-  public static final int CARGO_PISTON_ID = 3;
-  public static final int HATCH_PANEL_PISTON_ID = 0;
-  public static final int[] CLIMBER_PISTONS_ID = {1,2};
-  public static final int EXTENSION_PISTON_ID = 4;
-  public static final int CLIMBER_STILT_PISTONS_ID = 5;
+  //public static final int CARGO_PISTON_ID = 3;
+  //public static final int HATCH_PANEL_PISTON_ID = 0;
+  //public static final int[] CLIMBER_PISTONS_ID = {1,2};
+  //public static final int EXTENSION_PISTON_ID = 4;
+  //public static final int CLIMBER_STILT_PISTONS_ID = 5;
 
   //OI
   public static final int XBOX_A_BUTTON = 1;
@@ -138,12 +138,12 @@ interface RobotMapFor2019Robot {
    * @see CLIMBER_DISTANCE_SENSOR_LEFT_ID
    * @see CLIMBER_DISTANCE_SENSOR_RIGHT_ID
    */
-  public static final double INCHES_BETWEEN_CLIMBER_DISTANCE_SENSORS = 16.0;
+  //public static final double INCHES_BETWEEN_CLIMBER_DISTANCE_SENSORS = 16.0;
 
-  public static final int CLIMBER_DISTANCE_SENSOR_OVERSAMPLE_BITS = 14;
+  //public static final int CLIMBER_DISTANCE_SENSOR_OVERSAMPLE_BITS = 14;
 
-  public static final int CLIMBER_DISTANCE_SENSOR_AVERAGE_BITS = 0;
-
+  //public static final int CLIMBER_DISTANCE_SENSOR_AVERAGE_BITS = 0;
+  /*
   public static final double CAMERA_HEIGHT = 47.0; // Inches, height of Limelight
   public static final double TARGET_HEIGHT_CARGO = 36.5; // Inches, height of field target
   public static final double TARGET_HEIGHT_HATCH = 28.5;
@@ -154,24 +154,24 @@ interface RobotMapFor2019Robot {
   public static final int HATCH_RETURN_CODE = 0;
   public static final int CARGO_RETURN_CODE = 1;
   public static final int NOTHING_RETURN_CODE = 2;
-  
+  */
   /*
   * TODO Add correct values for 2018 test robot
   */
   //PDP IDS
-  public static final int PDP_ID_CARGO_INTAKE = 9;
-  public static final int PDP_STEERING_FR = 8;
+  //public static final int PDP_ID_CARGO_INTAKE = 9;
+  public static final int PDP_STEERING_FR = 12;
   public static final int PDP_STEERING_FL = 11;
-  public static final int PDP_STEERING_RL = 4;
-  public static final int PDP_STEERING_RR = 7;
-  public static final int PDP_DRIVE_FR = 0/*13*/;
-  public static final int PDP_DRIVE_FL = 3/*15*/;
-  public static final int PDP_DRIVE_RL = 13/*0*/;
-  public static final int PDP_DRIVE_RR = 15/*3*/;
-  public static final int PDP_LIMELIGHT = 2;
-  public static final int PDP_CLIMBER_WINCH = 3;
-  public static final int PDP_ELEVATOR_MOTOR = 6;
+  public static final int PDP_STEERING_RL = 5;
+  public static final int PDP_STEERING_RR = 10;
+  public static final int PDP_DRIVE_FR = 6/*13*/;
+  public static final int PDP_DRIVE_FL = 1/*15*/;
+  public static final int PDP_DRIVE_RL = 3/*0*/;
+  public static final int PDP_DRIVE_RR = 0/*3*/;
+  //public static final int PDP_LIMELIGHT = 2;
+  //public static final int PDP_CLIMBER_WINCH = 3;
+  //public static final int PDP_ELEVATOR_MOTOR = 6;
 
   //MOTOR STALL CURRENT THRESHOLDS
-  public static final double CURRENT_THRESHOLD_CARGO_INTAKE = 15.0;
+  //public static final double CURRENT_THRESHOLD_CARGO_INTAKE = 15.0;
 }
