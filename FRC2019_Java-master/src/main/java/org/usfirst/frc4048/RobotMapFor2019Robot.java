@@ -81,7 +81,7 @@ interface RobotMapFor2019Robot {
   public static final int REAR_LEFT_STEER_MOTOR_ID = 4/*3*/; 
   public static final int REAR_RIGHT_STEER_MOTOR_ID = 5/*4*/;
 
-  //public static final int DRIVE_PIGEON_ID = 9;
+  public static final int DRIVE_PIGEON_ID = 9;
   //public static final int PCM_CAN_ID = 10;  
   //public static final int ELEVATOR_MOTOR_ID = 11;
   
@@ -98,8 +98,8 @@ interface RobotMapFor2019Robot {
 
   //DIGITAL INPUTS
   //public static final int CARGO_OPTICAL_SENSOR_ID = 2;
-  //public static final int SWERVE_DRIVE_ENCODER_A_ID = 5; 
-  //public static final int SWERVE_DRIVE_ENCODER_B_ID = 6;
+  public static final int SWERVE_DRIVE_ENCODER_A_ID = 5; 
+  public static final int SWERVE_DRIVE_ENCODER_B_ID = 6;
   //public static final int[] ALIGNMENT_ULTRASONIC_ID = {3,4};
   //public static final int HATCH_DIGITAL_INPUT_ID = 7;
   //public static final int CARGO_DIGITAL_INPUT_ID = 8;
@@ -143,18 +143,18 @@ interface RobotMapFor2019Robot {
   //public static final int CLIMBER_DISTANCE_SENSOR_OVERSAMPLE_BITS = 14;
 
   //public static final int CLIMBER_DISTANCE_SENSOR_AVERAGE_BITS = 0;
-  /*
-  public static final double CAMERA_HEIGHT = 47.0; // Inches, height of Limelight
+  
+  /*public static final double CAMERA_HEIGHT = 47.0; // Inches, height of Limelight
   public static final double TARGET_HEIGHT_CARGO = 36.5; // Inches, height of field target
   public static final double TARGET_HEIGHT_HATCH = 28.5;
   public static final double CAMERA_ANGLE = -6; // Degrees, angle that the camera is mounted at
-
+*/
   public static final double ROBOT_CENTRIC_SCALE_RATIO = 0.60;
 
   public static final int HATCH_RETURN_CODE = 0;
   public static final int CARGO_RETURN_CODE = 1;
   public static final int NOTHING_RETURN_CODE = 2;
-  */
+  
   /*
   * TODO Add correct values for 2018 test robot
   */

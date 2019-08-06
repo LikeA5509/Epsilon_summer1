@@ -15,13 +15,13 @@ import java.util.concurrent.TimeUnit;
 import org.usfirst.frc4048.utils.DoubleSolenoidUtil;
 
 // import org.usfirst.frc4048.commands.UnCradleIntake;
-import org.usfirst.frc4048.commands.climber.ClimbWinchManual;
-import org.usfirst.frc4048.commands.manipulator.ReleaseGamePieceScheduler;
-import org.usfirst.frc4048.commands.manipulator.cargo.CargoWristDown;
-import org.usfirst.frc4048.commands.ManualCargoSensorToggle;
-import org.usfirst.frc4048.commands.ScheduleBButton;
-import org.usfirst.frc4048.commands.StartAuton;
-import org.usfirst.frc4048.commands.climber.ClimbMovePiston;
+//import org.usfirst.frc4048.commands.climber.ClimbWinchManual;
+//import org.usfirst.frc4048.commands.manipulator.ReleaseGamePieceScheduler;
+//import org.usfirst.frc4048.commands.manipulator.cargo.CargoWristDown;
+//import org.usfirst.frc4048.commands.ManualCargoSensorToggle;
+//import org.usfirst.frc4048.commands.ScheduleBButton;
+//import org.usfirst.frc4048.commands.StartAuton;
+//import org.usfirst.frc4048.commands.climber.ClimbMovePiston;
 import org.usfirst.frc4048.commands.drive.CentricModeRobot;
 // import org.usfirst.frc4048.commands.DriveTargetCenter;
 // import org.usfirst.frc4048.commands.LimelightAlign;
@@ -31,31 +31,31 @@ import org.usfirst.frc4048.commands.drive.DriveAlignPhase2;
 import org.usfirst.frc4048.commands.drive.DriveAlignPhase3;
 import org.usfirst.frc4048.commands.drive.ResetGyro;
 import org.usfirst.frc4048.commands.drive.RotateAngle;
-import org.usfirst.frc4048.commands.drive.RotateAngleForAlignment;
-import org.usfirst.frc4048.commands.elevator.ElevatorMoveScheduler;
+//import org.usfirst.frc4048.commands.drive.RotateAngleForAlignment;
+/*import org.usfirst.frc4048.commands.elevator.ElevatorMoveScheduler;
 import org.usfirst.frc4048.commands.elevator.ElevatorMoveToPos;
 import org.usfirst.frc4048.commands.elevator.ElevatorResetEncoder;
 import org.usfirst.frc4048.commands.manipulator.hatchpanel.HatchPanelIntake;
 import org.usfirst.frc4048.commands.manipulator.hatchpanel.HatchPanelRelease;
 import org.usfirst.frc4048.commands.limelight.LimelightToggle;
-import org.usfirst.frc4048.commands.limelight.LimelightToggleStream;
+import org.usfirst.frc4048.commands.limelight.LimelightToggleStream;*/
 // import org.usfirst.frc4048.commands.pivot.PivotGroup;
 // import org.usfirst.frc4048.commands.pivot.PivotPistonTest;
 // import org.usfirst.frc4048.commands.pivot.TogglePivot;
-import org.usfirst.frc4048.subsystems.CargoSubsystem;
+/*import org.usfirst.frc4048.subsystems.CargoSubsystem;
 import org.usfirst.frc4048.subsystems.Climber;
-import org.usfirst.frc4048.subsystems.CompressorSubsystem;
+import org.usfirst.frc4048.subsystems.CompressorSubsystem;*/
 import org.usfirst.frc4048.subsystems.DriveTrain;
-import org.usfirst.frc4048.subsystems.DrivetrainSensors;
+/*import org.usfirst.frc4048.subsystems.DrivetrainSensors;
 import org.usfirst.frc4048.subsystems.Elevator;
 import org.usfirst.frc4048.subsystems.Extension;
 import org.usfirst.frc4048.subsystems.GamePieceMode;
 import org.usfirst.frc4048.subsystems.HatchPanelSubsystem;
-import org.usfirst.frc4048.subsystems.Pivot;
+import org.usfirst.frc4048.subsystems.Pivot;*/
 import org.usfirst.frc4048.subsystems.PowerDistPanel;
-import org.usfirst.frc4048.utils.ElevatorPosition;
+//import org.usfirst.frc4048.utils.ElevatorPosition;
 import org.usfirst.frc4048.utils.Logging;
-import org.usfirst.frc4048.utils.MechanicalMode;
+//import org.usfirst.frc4048.utils.MechanicalMode;
 import org.usfirst.frc4048.utils.SmartShuffleboard;
 import org.usfirst.frc4048.utils.Timer;
 import org.usfirst.frc4048.utils.WantedElevatorPosition;
@@ -81,18 +81,18 @@ public class Robot extends TimedRobot {
   public static DriveTrain drivetrain;
   public static Logging logging;
   public static PowerDistPanel pdp;
-  public static CompressorSubsystem compressorSubsystem;
-  public static DrivetrainSensors drivetrainSensors;
-  public static Elevator elevator;
-  public static CargoSubsystem cargoSubsystem;
-  public static HatchPanelSubsystem hatchPanelSubsystem;
-  public static Climber climber;
-  public static GamePieceMode gamePieceMode;
+  //public static CompressorSubsystem compressorSubsystem;
+  //public static DrivetrainSensors drivetrainSensors;
+  //public static Elevator elevator;
+  //public static CargoSubsystem cargoSubsystem;
+  //public static HatchPanelSubsystem hatchPanelSubsystem;
+  //public static Climber climber;
+  //public static GamePieceMode gamePieceMode;
   public static Diagnostics diagnostics;
-  public static MechanicalMode mechanicalMode;
-  public static Extension extension;
+  //public static MechanicalMode mechanicalMode;
+  //public static Extension extension;
   private final static Timer timer = new Timer(100);
-  public static Pivot pivot;
+  //public static Pivot pivot;
 
   /**
    * Robot thread scheduler. Initialized with a static thread pool.
@@ -113,43 +113,43 @@ public class Robot extends TimedRobot {
 
     diagnostics = new Diagnostics();
 
-    if (RobotMap.ENABLE_MANIPULATOR){
+    /*if (RobotMap.ENABLE_MANIPULATOR){
       // mechanicalMode = new MechanicalMode();
       gamePieceMode = new GamePieceMode();
       // mode = mechanicalMode.getMode();
-    }
+    }*/
     // int mode = RobotMap.CARGO_RETURN_CODE;
     if (RobotMap.ENABLE_DRIVETRAIN) {
       drivetrain = new DriveTrain();
     }
     pdp = new PowerDistPanel();
-    if (RobotMap.ENABLE_COMPRESSOR) {
-      compressorSubsystem = new CompressorSubsystem();
-    }
-    drivetrainSensors = new DrivetrainSensors();
+    // if (RobotMap.ENABLE_COMPRESSOR) {
+    //   compressorSubsystem = new CompressorSubsystem();
+    // }
+    // drivetrainSensors = new DrivetrainSensors();
 
-    drivetrainSensors.setStream(2);  // main USB with limelight PIP
+    // drivetrainSensors.setStream(2);  // main USB with limelight PIP
 
-    if (RobotMap.ENABLE_ELEVATOR){
-      elevator = new Elevator();
-    }
-    if (RobotMap.ENABLE_MANIPULATOR){
-      if (RobotMap.ENABLE_CARGO_SUBSYSTEM) {
-          cargoSubsystem = new CargoSubsystem();
-      }
-      if (RobotMap.ENABLE_HATCH_PANEL_SUBSYSTEM) {
-        hatchPanelSubsystem = new HatchPanelSubsystem();
-      }
-    }
-    if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
-      climber = new Climber();
-    }
+    // if (RobotMap.ENABLE_ELEVATOR){
+    //   elevator = new Elevator();
+    // }
+    // if (RobotMap.ENABLE_MANIPULATOR){
+    //   if (RobotMap.ENABLE_CARGO_SUBSYSTEM) {
+    //       cargoSubsystem = new CargoSubsystem();
+    //   }
+    //   if (RobotMap.ENABLE_HATCH_PANEL_SUBSYSTEM) {
+    //     hatchPanelSubsystem = new HatchPanelSubsystem();
+    //   }
+    // }
+    // if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
+    //   climber = new Climber();
+    // }
 
-    if (RobotMap.ENABLE_EXTENSION_SUBSYSTEM) {
-      // pivot = new Pivot();
-      extension = new Extension();
+    // if (RobotMap.ENABLE_EXTENSION_SUBSYSTEM) {
+    //   // pivot = new Pivot();
+    //   extension = new Extension();
 
-    }
+    // }
     
     logging = new Logging();
 
@@ -157,7 +157,7 @@ public class Robot extends TimedRobot {
     oi = new OI();
 //    SmartDashboard.putData("Auto mode", m_chooser);
     CameraServer.getInstance().startAutomaticCapture();
-    Robot.drivetrainSensors.ledOff();
+    //Robot.drivetrainSensors.ledOff();
     putCommandsInCompetition();
   }
 
@@ -191,7 +191,7 @@ public class Robot extends TimedRobot {
   @Override
   public void disabledPeriodic() {
     // drivetrainSensors.setStream(2);  // main USB with limelight PIP
-    Robot.drivetrainSensors.ledOff();
+    //Robot.drivetrainSensors.ledOff();
     Scheduler.getInstance().run();
   }
 
@@ -217,9 +217,9 @@ public class Robot extends TimedRobot {
 
     commonInit("autonomousInit");
 
-    if (RobotMap.ENABLE_ELEVATOR) {
-      Scheduler.getInstance().add(new StartAuton());
-    } 
+    // if (RobotMap.ENABLE_ELEVATOR) {
+    //   Scheduler.getInstance().add(new StartAuton());
+    // } 
 
     logging.traceMessage(Logging.MessageLevel.INFORMATION, "---------------------------- Autonomous mode starting ----------------------------");
     
@@ -270,15 +270,15 @@ public class Robot extends TimedRobot {
   public void commonInit(final String loggingLabel) {
     logging.traceMessage(Logging.MessageLevel.INFORMATION, LINE, loggingLabel, LINE);
     logging.writeAllTitles();
-    Robot.drivetrainSensors.ledOff();
+    //Robot.drivetrainSensors.ledOff();
 
     if (RobotMap.SHUFFLEBOARD_DEBUG_MODE) {
       putCommandsOnShuffleboard();
     }
-    if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
-      Robot.climber.movePiston(State.reverse);
-      // Scheduler.getInstance().add(new ClimbMovePiston(State.reverse));
-    }
+    // if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
+    //   Robot.climber.movePiston(State.reverse);
+    //   // Scheduler.getInstance().add(new ClimbMovePiston(State.reverse));
+    // }
   }
 
   /**
@@ -319,36 +319,36 @@ public class Robot extends TimedRobot {
   }
 
   private void putCommandsOnShuffleboard() {
-    if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
-      SmartShuffleboard.putCommand("Climber", "Piston Forward", new ClimbMovePiston(DoubleSolenoidUtil.State.forward));
-      SmartShuffleboard.putCommand("Climber", "Piston Rev", new ClimbMovePiston(DoubleSolenoidUtil.State.reverse));
-      SmartShuffleboard.putCommand("Climber", "Piston Off", new ClimbMovePiston(DoubleSolenoidUtil.State.off));
-    }
+    // if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
+    //   SmartShuffleboard.putCommand("Climber", "Piston Forward", new ClimbMovePiston(DoubleSolenoidUtil.State.forward));
+    //   SmartShuffleboard.putCommand("Climber", "Piston Rev", new ClimbMovePiston(DoubleSolenoidUtil.State.reverse));
+    //   SmartShuffleboard.putCommand("Climber", "Piston Off", new ClimbMovePiston(DoubleSolenoidUtil.State.off));
+    // }
     if (RobotMap.ENABLE_DRIVETRAIN) {
       SmartShuffleboard.putCommand("Drive", "rotate 0", new RotateAngle(0));
       SmartShuffleboard.putCommand("Drive", "DriveAlignGroup", new DriveAlignGroup());
       SmartShuffleboard.putCommand("Drive", "DriveAlignPhase2", new DriveAlignPhase2(0.3, 0.4, true));
       SmartShuffleboard.putCommand("Drive", "DriveAlignPhase3", new DriveAlignPhase3(0.25, true));
       SmartShuffleboard.putCommand("Drive", "Toggle Centric Mode", new CentricModeToggle());
-      SmartShuffleboard.putCommand("Drive", "Rotate angle align", new RotateAngleForAlignment());
+      //SmartShuffleboard.putCommand("Drive", "Rotate angle align", new RotateAngleForAlignment());
     }
-    if(RobotMap.ENABLE_HATCH_PANEL_SUBSYSTEM) {
-      SmartShuffleboard.putCommand("Hatch Panel", "Intake", new HatchPanelIntake());
-      SmartShuffleboard.putCommand("Hatch Panel", "Release", new HatchPanelRelease());
-      SmartShuffleboard.putCommand("Hatch Panel", "Schedule release", new ReleaseGamePieceScheduler());
-    }
-    SmartShuffleboard.putCommand("DrivetrainSensors", "Limelight On", new LimelightToggle(true));
-    SmartShuffleboard.putCommand("DrivetrainSensors", "Limelight Off", new LimelightToggle(false));
-    SmartShuffleboard.putCommand("DrivetrainSensors", "Limelight Stream Toggle", new LimelightToggleStream());
-    SmartShuffleboard.putCommand("DrivetrainSensors", "Schedule Blink or Move", new ScheduleBButton());
+    // if(RobotMap.ENABLE_HATCH_PANEL_SUBSYSTEM) {
+    //   SmartShuffleboard.putCommand("Hatch Panel", "Intake", new HatchPanelIntake());
+    //   SmartShuffleboard.putCommand("Hatch Panel", "Release", new HatchPanelRelease());
+    //   SmartShuffleboard.putCommand("Hatch Panel", "Schedule release", new ReleaseGamePieceScheduler());
+    // }
+    // SmartShuffleboard.putCommand("DrivetrainSensors", "Limelight On", new LimelightToggle(true));
+    // SmartShuffleboard.putCommand("DrivetrainSensors", "Limelight Off", new LimelightToggle(false));
+    // SmartShuffleboard.putCommand("DrivetrainSensors", "Limelight Stream Toggle", new LimelightToggleStream());
+    // SmartShuffleboard.putCommand("DrivetrainSensors", "Schedule Blink or Move", new ScheduleBButton());
 
-    if (RobotMap.ENABLE_ELEVATOR) {
-      SmartShuffleboard.putCommand("Elevator", "Rocket High", new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_HIGH));
-      SmartShuffleboard.putCommand("Elevator", "Rocket High", new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_MID));
-      SmartShuffleboard.putCommand("Elevator", "Rocket High", new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_LOW));
-      SmartShuffleboard.put("Elevator", "Encoder", elevator.getEncoder());
-      SmartShuffleboard.put("Elevator", "Current", elevator.getElevatorMotor().getOutputCurrent());
-    }
+    // if (RobotMap.ENABLE_ELEVATOR) {
+    //   SmartShuffleboard.putCommand("Elevator", "Rocket High", new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_HIGH));
+    //   SmartShuffleboard.putCommand("Elevator", "Rocket High", new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_MID));
+    //   SmartShuffleboard.putCommand("Elevator", "Rocket High", new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_LOW));
+    //   SmartShuffleboard.put("Elevator", "Encoder", elevator.getEncoder());
+    //   SmartShuffleboard.put("Elevator", "Current", elevator.getElevatorMotor().getOutputCurrent());
+    // }
 
     if (RobotMap.ENABLE_EXTENSION_SUBSYSTEM)
     {
@@ -357,15 +357,15 @@ public class Robot extends TimedRobot {
       // SmartShuffleboard.putCommand("Pivot", "Piston Retract", new PivotPistonTest(false));
     }
 
-    if (RobotMap.ENABLE_CARGO_SUBSYSTEM) {
-      SmartShuffleboard.putCommand("Cargo", "Cargo drop ball", new CargoWristDown());
-    }
+    // if (RobotMap.ENABLE_CARGO_SUBSYSTEM) {
+    //   SmartShuffleboard.putCommand("Cargo", "Cargo drop ball", new CargoWristDown());
+    // }
   }
 
   private void putCommandsInCompetition() {
     SmartShuffleboard.putCommand("Driver", "Reset Gyro", new ResetGyro());
     // SmartShuffleboard.putCommand("Driver", "Reset Elevator Encoder", new ElevatorResetEncoder());
-    SmartShuffleboard.putCommand("Driver", "Toggle Cargo State", new ManualCargoSensorToggle());
+    //SmartShuffleboard.putCommand("Driver", "Toggle Cargo State", new ManualCargoSensorToggle());
   }
 
 	public static Timer timer() {

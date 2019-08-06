@@ -7,19 +7,19 @@
 
 package org.usfirst.frc4048;
 
-import org.usfirst.frc4048.commands.CancelCommand;
+//import org.usfirst.frc4048.commands.CancelCommand;
 import org.usfirst.frc4048.commands.LogError;
-import org.usfirst.frc4048.commands.ScheduleBButton;
-import org.usfirst.frc4048.commands.manipulator.ReleaseGamePieceScheduler;
-import org.usfirst.frc4048.commands.climber.ClimbDropRamp;
+// import org.usfirst.frc4048.commands.ScheduleBButton;
+// import org.usfirst.frc4048.commands.manipulator.ReleaseGamePieceScheduler;
+// import org.usfirst.frc4048.commands.climber.ClimbDropRamp;
 import org.usfirst.frc4048.commands.drive.CentricModeToggle;
 import org.usfirst.frc4048.commands.drive.DriveAlignGroup;
-import org.usfirst.frc4048.commands.elevator.ElevatorMoveScheduler;
-import org.usfirst.frc4048.commands.elevator.ElevatorMoveToPos;
-import org.usfirst.frc4048.commands.extension.ExtensionMove;
-import org.usfirst.frc4048.commands.limelight.LimelightBlink;
-import org.usfirst.frc4048.commands.manipulator.hatchpanel.HatchPanelIntake;
-import org.usfirst.frc4048.commands.manipulator.hatchpanel.HatchPanelRelease;
+// import org.usfirst.frc4048.commands.elevator.ElevatorMoveScheduler;
+// import org.usfirst.frc4048.commands.elevator.ElevatorMoveToPos;
+// import org.usfirst.frc4048.commands.extension.ExtensionMove;
+// import org.usfirst.frc4048.commands.limelight.LimelightBlink;
+// import org.usfirst.frc4048.commands.manipulator.hatchpanel.HatchPanelIntake;
+// import org.usfirst.frc4048.commands.manipulator.hatchpanel.HatchPanelRelease;
 // import org.usfirst.frc4048.commands.pivot.PivotGroup;
 // import org.usfirst.frc4048.commands.pivot.TogglePivot;
 import org.usfirst.frc4048.triggers.DownDPADTrigger;
@@ -27,7 +27,7 @@ import org.usfirst.frc4048.triggers.LeftDPADTrigger;
 import org.usfirst.frc4048.triggers.RightDPADTrigger;
 import org.usfirst.frc4048.triggers.UpDPADTrigger;
 import org.usfirst.frc4048.triggers.XboxTriggerRight;
-import org.usfirst.frc4048.utils.ElevatorPosition;
+//import org.usfirst.frc4048.utils.ElevatorPosition;
 import org.usfirst.frc4048.utils.WantedElevatorPosition;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -104,11 +104,11 @@ public class OI {
     downDPADTrigger = new DownDPADTrigger(xboxController);
     upDPADTrigger = new UpDPADTrigger(xboxController);
 
-    if (RobotMap.ENABLE_EXTENSION_SUBSYSTEM) {
-      downDPADTrigger.whenActive(new ExtensionMove(false));
-      upDPADTrigger.whenActive(new ExtensionMove(true));
+    // if (RobotMap.ENABLE_EXTENSION_SUBSYSTEM) {
+    //   downDPADTrigger.whenActive(new ExtensionMove(false));
+    //   upDPADTrigger.whenActive(new ExtensionMove(true));
       
-    }
+    // }
 
     if (RobotMap.ENABLE_DRIVETRAIN) {
       // alignWithVision = new JoystickButton(leftJoy, 6);
@@ -122,13 +122,13 @@ public class OI {
     logError.whenPressed(new LogError());
     
     cancelCommand = new JoystickButton(controller, RobotMap.XBOX_BACK_BUTTON);
-    cancelCommand.whenPressed(new CancelCommand());
+    //cancelCommand.whenPressed(new CancelCommand());
     if (RobotMap.ENABLE_MANIPULATOR) {
       hatchIntake = new JoystickButton(controller, RobotMap.XBOX_LEFT_BUMPER);
       gamePieceRelease = new JoystickButton(controller, RobotMap.XBOX_RIGHT_BUMPER);
 
-      hatchIntake.whenPressed(new HatchPanelIntake());
-      gamePieceRelease.whenPressed(new ReleaseGamePieceScheduler());
+      // hatchIntake.whenPressed(new HatchPanelIntake());
+      // gamePieceRelease.whenPressed(new ReleaseGamePieceScheduler());
     }
     if (RobotMap.ENABLE_ELEVATOR) {
       rocketHigh = new JoystickButton(controller, RobotMap.XBOX_Y_BUTTON);
@@ -136,17 +136,17 @@ public class OI {
       rocketLow = new JoystickButton(controller, RobotMap.XBOX_A_BUTTON);
       cargoCargoship = new JoystickButton(controller, RobotMap.XBOX_B_BUTTON);
 
-      rocketHigh.whenPressed(new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_HIGH));
-      rocketMid.whenPressed(new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_MID));
-      rocketLow.whenPressed(new ElevatorMoveToPos(ElevatorPosition.SAFE_HEIGHT));
-      cargoCargoship.whenPressed(new ScheduleBButton());
+      // rocketHigh.whenPressed(new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_HIGH));
+      // rocketMid.whenPressed(new ElevatorMoveScheduler(WantedElevatorPosition.ROCKET_MID));
+      // rocketLow.whenPressed(new ElevatorMoveToPos(ElevatorPosition.SAFE_HEIGHT));
+      // cargoCargoship.whenPressed(new ScheduleBButton());
       
     }
 
-    if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
-      dropRamp = new JoystickButton(controller, RobotMap.XBOX_RIGHT_STICK_PRESS);
-      dropRamp.whenPressed(new ClimbDropRamp());
-    }
+    // if (RobotMap.ENABLE_CLIMBER_SUBSYSTEM) {
+    //   dropRamp = new JoystickButton(controller, RobotMap.XBOX_RIGHT_STICK_PRESS);
+    //   dropRamp.whenPressed(new ClimbDropRamp());
+    // }
   }
 
   public Joystick getLeftJoy() {
