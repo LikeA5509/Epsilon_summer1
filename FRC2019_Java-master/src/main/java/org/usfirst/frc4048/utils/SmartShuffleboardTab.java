@@ -25,7 +25,7 @@ import edu.wpi.first.wpilibj.shuffleboard.SimpleWidget;
  * Add your docs here.
  */
 public class SmartShuffleboardTab {
-    private Map<String, SimpleWidget> widgetMap = new HashMap();
+    private Map<String, SimpleWidget> widgetMap = new HashMap<String, SimpleWidget>();
     private Set<String> commandSet = new HashSet<>();
     private ShuffleboardTab tab;
      

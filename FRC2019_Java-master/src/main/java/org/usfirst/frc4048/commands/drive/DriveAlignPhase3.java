@@ -1,4 +1,4 @@
-
+/*
 package org.usfirst.frc4048.commands.drive;
 
 import org.usfirst.frc4048.Robot;
@@ -32,6 +32,7 @@ public class DriveAlignPhase3 extends LoggedCommand {
 	 * @param power  - total power to apply to drivetrain
 	 * @param b
 	 */
+	/*
 	public DriveAlignPhase3(double power, boolean isCamFront) {
 		super(String.format(" is running, power=%f, isCamFront=%b", power, isCamFront));
 		requires(Robot.drivetrain);
@@ -124,3 +125,4 @@ public class DriveAlignPhase3 extends LoggedCommand {
 		loggedEnd();
 	}
 }
+*/

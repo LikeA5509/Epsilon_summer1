@@ -35,23 +35,23 @@ interface RobotMapFor2019Robot {
    * so it does not impact the amount of time it takes to complete the
    * periodic() loop.
    */
-  public static final boolean ENABLE_PIGEON_THREAD = true;
+  public static final boolean ENABLE_PIGEON_THREAD = false;
 
   public static final boolean ENABLE_DRIVETRAIN = true;
 
-  public static final boolean ENABLE_ELEVATOR = true;
+  public static final boolean ENABLE_ELEVATOR = false;
 
-  public static final boolean ENABLE_MANIPULATOR = true;
+  public static final boolean ENABLE_MANIPULATOR = false;
 
-  public static final boolean ENABLE_CARGO_SUBSYSTEM = true; //this should be true when we actually get the robot
+  public static final boolean ENABLE_CARGO_SUBSYSTEM = false; //this should be true when we actually get the robot
 
-  public static final boolean ENABLE_HATCH_PANEL_SUBSYSTEM = true; //this should be true when we actually get the robot
+  public static final boolean ENABLE_HATCH_PANEL_SUBSYSTEM = false; //this should be true when we actually get the robot
 
-  public static final boolean ENABLE_CLIMBER_SUBSYSTEM = true;
+  public static final boolean ENABLE_CLIMBER_SUBSYSTEM = false;
 
   public static final boolean ENABLE_BEGIN_MATCH_GROUPCOMMAND = false;
 
-  public static final boolean ENABLE_EXTENSION_SUBSYSTEM = true;
+  public static final boolean ENABLE_EXTENSION_SUBSYSTEM = false;
   /**
    * Enables logging of timing data related to watchdog timeouts. Set to 0 to disable, otherwise, set to the 
    * minimum number of milliseconds that will be logged. For example, if 15, then don't log any timing data less

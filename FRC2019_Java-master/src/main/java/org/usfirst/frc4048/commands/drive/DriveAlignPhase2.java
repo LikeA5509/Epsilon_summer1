@@ -4,7 +4,7 @@
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
-
+/*
 package org.usfirst.frc4048.commands.drive;
 
 import org.usfirst.frc4048.Robot;
@@ -167,6 +167,7 @@ public class DriveAlignPhase2 extends LoggedCommand {
    * @param pMin         the minimum power to drive at
    * @return the power to drive at (between 0-1)
    */
+  /*
   private double pidCalc(double distanceLeft, double pMax, double pMin) {
     if (distanceLeft > PID_DISTANCE) {
       return pMax;
@@ -184,4 +185,4 @@ public class DriveAlignPhase2 extends LoggedCommand {
   protected void loggedCancel() {
     loggedEnd();
   }
-}
+}*/
